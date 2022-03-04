@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Alura MIDI</title>
+    <title>Audio Pom 1.0</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,10 +17,11 @@
     <link rel="stylesheet" href="css/estilos.css">
 
 </head>
+
 <body>
 
-    <h1>Alura Midi</h1>
-
+    <h1>Audio Pom 1.0</h1>
+    <!--Botões simples com CSS-->
     <section class="teclado">
         <button class="tecla tecla_pom">Pom</button>
         <button class="tecla tecla_clap">Clap</button>
@@ -33,7 +35,7 @@
         <button class="tecla tecla_tic">Tic</button>
         <button class="tecla tecla_tom">Tom</button>
     </section>
-
+    <!--Sessão dos áudios ligados aos botões acima-->
     <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
     <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
     <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
@@ -44,5 +46,8 @@
     <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
     <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
 
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
