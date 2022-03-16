@@ -1,37 +1,26 @@
+// Teclas Audio Pom 1.0
+
+
 function tocaSomPom() {
     document.querySelector('#som_tecla_pom').play();
 }
+function tocaSom() {
 
-function tocaSomClap() {
-    document.querySelector('#som_tecla_clap').play()
 }
 
-function tocaSomTim() {
-    document.querySelector('#som_tecla_tim').play()
-}
 
-function tocaSomPuff() {
-    document.querySelector('#som_tecla_puff').play()
-}
 
-function tocaSomSplash() {
-    document.querySelector('#som_tecla_splash').play()
-}
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
-function tocaSomToim() {
-    document.querySelector('#som_tecla_toim').play()
-}
 
-function tocaSomPsh() {
-    document.querySelector('#som_tecla_psh').play()
-}
 
-function tocaSomTic() {
-    document.querySelector('#som_tecla_tic').play()
-}
+let contador = 0;
 
-function tocaSomTom() {
-    document.querySelector('#som_tecla_tom').play()
-}
+//enquanto O contador for menor que o tamanho da lista 'length'
+while (contador < listaDeTeclas.length) {
 
-document.querySelector('.tecla_pom').onclick = tocaSomPom;
+    listaDeTeclas[contador].onclick = tocaSomPom;
+    contador = contador + 1;
+
+    console.log(contador);
+};
