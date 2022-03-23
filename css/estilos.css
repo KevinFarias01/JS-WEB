@@ -66,3 +66,23 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--azul-escuro) inset, 1px 1px 10px var(--luz);
 }
+
+
+@media (max-width: 500px) {
+  body{
+    min-height: 100vh;
+  }
+  body h1{
+    font-size: 1.8rem;
+  }
+
+  body .teclado{
+    width: 85%;
+    height: 85%;
+  }
+  body .tecla{
+    width: 95%;
+    height: 95%;
+    font-size: 1.2em;
+  }
+}
